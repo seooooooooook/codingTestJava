@@ -14,11 +14,12 @@ public class 구간_합 {
             S[i] = S[i - 1] + A[i];
         }
 
-        int i = sc.nextInt();
-        int j = sc.nextInt();
         // 대상 배열 받기 A(N)
-
-        System.out.println(S[j] - S[i - 1]);
+        for (int k = 0; k < M; k++) {
+            int i = sc.nextInt();
+            int j = sc.nextInt();
+            System.out.println(S[j] - S[i - 1]);
+        }
         //출력 : S(j) - S(i - 1)
 
     }
